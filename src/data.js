@@ -1,6 +1,26 @@
 export const initialData = [
-  { id: '1', name: 'Core API Server', status: 'operational', uptime: '99.99%', description: 'Main backend services' },
-  { id: '2', name: 'Payment Gateway', status: 'operational', uptime: '100%', description: 'Stripe & PayPal integration' },
-  { id: '3', name: 'Customer Dashboard', status: 'degraded', uptime: '95.50%', description: 'Frontend responding slowly' },
-  { id: '4', name: 'Database Cluster', status: 'operational', uptime: '99.95%', description: 'Primary replica set' },
+  { 
+    id: '1', 
+    name: 'GitHub Profile', 
+    description: 'Fetching real user data', 
+    url: 'https://api.github.com/users/xingchengzhu', // 替换成你的 GitHub 用户名
+    status: 'operational', 
+    metrics: {} // 空对象，等待自动填充真实数据
+  },
+  { 
+    id: '2', 
+    name: 'IP Info (HttpBin)', 
+    description: 'Public IP & Origin check', 
+    url: 'https://httpbin.org/get', 
+    status: 'operational', 
+    metrics: {}
+  },
+  { 
+    id: '3', 
+    name: 'UUID Generator', 
+    description: 'Testing JSON response', 
+    url: 'https://httpbin.org/uuid', 
+    status: 'operational', 
+    metrics: {}
+  }
 ];
